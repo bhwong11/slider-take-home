@@ -1,3 +1,40 @@
 body{
     background-color: beige;
+    margin:0;
+    padding:0;
+    sizing:border-box;
+}
+main{
+    display: flex;
+}
+.slider-imageDotes-container{
+    display: flex;
+    flex-direction: column;
+}
+.img-frame{
+    width:300px;
+    overflow: hidden;
+}
+.img-container{
+    display: flex;
+}
+
+.no-display{
+    display:none;
+}
+
+.slider-bar{
+    width:200px;
+    height:20px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider-dot{
+    height:10px;
+    width:10px;
+    background-color: cyan;
+}
+.active-dot{
+    background-color: darkgoldenrod;
 }
