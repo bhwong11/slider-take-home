@@ -3,8 +3,15 @@ body{
     margin:0;
     padding:0;
     sizing:border-box;
+    display: flex;
+    justify-content: center;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-card{
     display: flex;
 }
 .slider-imageDotes-container{
@@ -17,6 +24,7 @@ main{
 }
 .img-container{
     display: flex;
+    transition: 1s;
 }
 
 .no-display{
@@ -26,15 +34,31 @@ main{
 .slider-bar{
     width:200px;
     height:20px;
-    background-color: chocolate;
+    background-color: lightgray;
     display: flex;
     justify-content: space-evenly;
 }
 .slider-dot{
     height:10px;
     width:10px;
-    background-color: cyan;
+    background-color: darkgray;
 }
 .active-dot{
-    background-color: darkgoldenrod;
+    background-color: gray;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    background-color: darkgrey;
+    height:300px;
+}
+.left-arrow{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.right-arrow{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
